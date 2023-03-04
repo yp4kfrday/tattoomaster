@@ -1,0 +1,310 @@
+/* Общие стили */
+body {
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"],
+input[type="number"],
+input[type="text"],
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #a98a8a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f4eded;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+    background-color: #886d6d;
+}
+p {
+  text-indent: 20px;
+}
+
+/* Стили для калькулятора */
+
+.calculator-container {
+    max-width: 500px;
+    margin: 15px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+  }
+  .calculator-header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .form-group {
+    margin-bottom: 10px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="number"] {
+    width: 10%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  select {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 5px;
+  }
+  .checkbox input[type="checkbox"] {
+    display: none;
+  }
+  .checkbox label {
+    display: inline-block;
+    font-weight: normal;
+    margin-left: 5px;
+  }
+  .btn-primary {
+    background-color: #b39898;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .btn-primary:hover {
+    background-color: #af8e8e;
+  }
+
+  /*Стиль для картинки и текста*/
+  .my-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .my-div .content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .my-div h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 20px 0;
+  }
+
+  .my-div p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+  }
+
+  /* Стиль лого и псевдонима */
+  .logo-name h1:hover span {
+    animation: jump 1s ease-in-out;
+}
+    .checkbox input[type="checkbox"] {
+    display: none;
+    }
+    .checkbox label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    background-color: #fff;
+    }
+    .checkbox input[type="checkbox"]:checked + label:before {
+    content: "\2713";
+    text-align: center;
+    line-height: 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #b39898;
+    }
+
+@keyframes jump {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+
+    20% {
+        transform: translateY(-10px) rotate(-5deg);
+    }
+
+    40% {
+        transform: translateY(0) rotate(0);
+    }
+
+    60% {
+        transform: translateY(-5px) rotate(5deg);
+    }
+
+    80% {
+        transform: translateY(0) rotate(0);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+
+}
+.logo-name h1 {
+    font-size: 30px;
+    color: #a98a8a;
+    text-shadow: 1.3px 1.3px 2.6px black;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin: 25px;
+    cursor:default;
+}
+.logo-name h1 span {
+    display: inline-block;
+}
+
+.logo-name h1:hover span {
+    animation: jump 1s ease-in-out;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    20% {
+        transform: translateY(-10px) rotate(-5deg);
+    }
+    40% {
+        transform: translateY(0) rotate(0);
+    }
+    60% {
+        transform: translateY(-5px) rotate(5deg);
+    }
+    80% {
+        transform: translateY(0) rotate(0);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+             /* Мой хэдер*/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #F5F5F5;
+  }
+  /* .contact-button a {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 2px solid #a98a8a;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: -25%;
+  }
+  .contact-button a:hover {
+    background-color: #b29a9a;
+    color: #F5F5F5;
+  } */
+  .gallery-button a{
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 2px solid #a98a8a;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: -25%;
+  }
+  .gallery-button a:hover {
+    background-color: #b29a9a;
+    color: #F5F5F5;
+  }
+  .contact-button, .gallery-button {
+    display: inline-block;
+    margin-top: 40px
+  }
+  .container {
+    max-width: 1200px; /* максимальная ширина контейнера */
+    margin: 0 auto; /* выравнивание контейнера по центру */
+    padding: 20px; /* внутренний отступ контейнера */
+  }
+
+               /*футер*/
+  footer {
+    margin:fixed(translateY);
+    margin-top: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+  }
+  .footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .social-icons a {
+    margin: 0 10px;
+  }
+  .social-icons i {
+    font-size: 20px;
+    color: #333;
+  }
